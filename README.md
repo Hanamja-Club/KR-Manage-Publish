@@ -1,1 +1,1 @@
-# KR-Management
+# Kartrider Rush+ Publishing
