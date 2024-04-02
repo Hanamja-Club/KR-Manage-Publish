@@ -1,0 +1,70 @@
+body {
+  background-color: #1D1F76;
+}
+body article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+body article img {
+  width: 300px;
+  margin-bottom: 30px;
+}
+body article #idInput {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+body article #idInput label {
+  width: 70px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+body article #idInput input {
+  height: 30px;
+  font-size: 16px;
+  text-indent: 10px;
+  font-weight: 500;
+  border: 3px solid #1073BB;
+  border-radius: 10px;
+}
+body article #pwInput {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+body article #pwInput label {
+  width: 70px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+body article #pwInput input {
+  height: 30px;
+  font-size: 16px;
+  text-indent: 10px;
+  font-weight: 500;
+  border: 3px solid #1073BB;
+  border-radius: 10px;
+}
+body article button {
+  padding: 5px 20px;
+  font-size: 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 800;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: normal;
+}
+body article button:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=index.css.map */
