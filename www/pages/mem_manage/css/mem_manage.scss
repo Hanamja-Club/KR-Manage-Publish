@@ -1,0 +1,45 @@
+#content {
+    text-align: center;
+    select {
+        margin: 20px auto 20px; // 중앙 정렬 및 아래 여백 추가
+        font-size: 24px;
+
+        width: 90%; // 초기 너비 설정
+
+        @media screen and (min-width: 0px) and (max-width: 480px) { // 작은 스마트폰
+            width: 95%;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) { // 큰 스마트폰 또는 태블릿
+            width: 80%;
+        }
+    }
+  
+    #info {
+      div {
+        text-align: left;
+        margin: 0 auto 10px; // 각 정보 요소 아래 여백 추가
+        width: 90%; // 초기 너비 설정
+
+        @media screen and (min-width: 0px) and (max-width: 480px) { // 작은 스마트폰
+            width: 95%;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) { // 큰 스마트폰 또는 태블릿
+            width: 80%;
+        }
+  
+        h2 {
+          margin-bottom: 5px; // h2와 p 요소 사이의 여백 추가
+        }
+  
+        &::after {
+          content: "";
+          display: block;
+          border-bottom: 2px solid #1073BB; // 아랫쪽 변 스타일 적용
+          margin-top: 5px; // 변과 다음 요소 사이의 여백 추가
+        }
+      }
+    }
+  }
+  

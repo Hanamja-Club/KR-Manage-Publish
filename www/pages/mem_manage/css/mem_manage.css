@@ -1,0 +1,42 @@
+#content {
+  text-align: center;
+}
+#content select {
+  margin: 20px auto 20px;
+  font-size: 24px;
+  width: 90%;
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  #content select {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #content select {
+    width: 80%;
+  }
+}
+#content #info div {
+  text-align: left;
+  margin: 0 auto 10px;
+  width: 90%;
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  #content #info div {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #content #info div {
+    width: 80%;
+  }
+}
+#content #info div h2 {
+  margin-bottom: 5px;
+}
+#content #info div::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #1073BB;
+  margin-top: 5px;
+}/*# sourceMappingURL=mem_manage.css.map */
