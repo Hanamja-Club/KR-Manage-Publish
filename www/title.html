@@ -7,24 +7,37 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/modal.css">
 
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/title.js"></script>
+    
 </head>
 <body>
     <article>
         <img src="img/logo_kartrush.png" alt="카트라이더 러쉬플러스 매니지먼트 앱입니다.">
 
-    <div id="idInput">
-        <label for="userID">ID</label>
-        <input type="text" id="userId" name="userId" placeholder="ID를 입력하세요">
-    </div>
-    <div id="pwInput">
-        <label for="userPW">패스워드</label>
-        <input type="text" id="userPW" name="userPW" placeholder="패스워드를 입력하세요">
-    </div>
+        <div id="idInput">
+            <label for="userId">ID</label>
+            <input type="text" id="userId" name="userId" placeholder="ID를 입력하세요">
+        </div>
+        <div id="pwInput">
+            <label for="userPW">패스워드</label>
+            <input type="text" id="userPW" name="userPW" placeholder="패스워드를 입력하세요">
+        </div>
 
-    <button id="loginButton">로그인</button>
+        <button id="loginButton">로그인</button>
     </article>
+
+    <div class="modal">
+        <div class="modal-content">
+            <h2>오류</h2>
+            <p>ID나 패스워드를 확인해주세요.</p>
+            <div class="modal-close">
+                <p>확인</p>
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>

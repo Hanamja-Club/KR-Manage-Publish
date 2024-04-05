@@ -1,34 +1,26 @@
 $(document).ready(function() {
-    // 로그인 버튼 클릭 시 모달 활성화
-    $('#loginButton').click(function() {
-        // 입력된 아이디와 패스워드 가져오기
-        var userId = $('#userId').val();
-        var userPW = $('#userPW').val();
-        
-        // 아이디와 패스워드 검증 로직 (여기서는 단순히 존재 여부만 확인)
-        if (!userId) {
-            showModal('ID를 확인해주세요.');
-        } else if (!userPW) {
-            showModal('패스워드를 확인해주세요.');
+    // 정해진 ID와 비밀번호
+    const validId = "junghj96";
+    const validPassword = "richard1996";
+
+    // 로그인 버튼 클릭 시
+    $("#loginButton").click(function() {
+        // 입력된 ID와 비밀번호 가져오기
+        const enteredId = $("#userId").val();
+        const enteredPassword = $("#userPW").val();
+
+        // ID와 비밀번호 검증
+        if (enteredId === validId && enteredPassword === validPassword) {
+            // 로그인 성공
+            alert("로그인 성공!");
+        } else {
+            // 로그인 실패 시 모달 팝업
+            $(".modal").css("display", "flex");
         }
     });
-    
-    // 모달 닫기 버튼 클릭 시 모달 닫기
-    $('.modal-close').click(function() {
-        closeModal();
+
+    // 모달 닫기 버튼 클릭 시
+    $(".modal-close").click(function() {
+        $(".modal").css("display", "none");
     });
 });
-
-// 모달 보이기
-function showModal(message) {
-    // 모달 내용 설정
-    $('.modal-content').text(message);
-    // 모달 활성화
-    $('.modal').addClass('active');
-}
-
-// 모달 닫기
-function closeModal() {
-    // 모달 비활성화
-    $('.modal').removeClass('active');
-}
