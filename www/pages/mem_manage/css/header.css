@@ -1,57 +1,58 @@
-@charset "UTF-8";
 header {
-  position: relative; /* 상대 위치 지정 */
-  background-color: #333; /* 배경색 */
-  padding: 10px 20px; /* 내부 여백 */
-  color: #fff; /* 글자색 */
-  display: flex; /* 헤더 요소들을 가로로 나열 */
-  justify-content: space-between; /* 요소들 사이의 간격을 최대한 넓게 설정 */
-  align-items: center; /* 요소들을 수직 중앙 정렬 */
+  position: relative;
+  background-color: #1D1F76;
+  padding: 10px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 24px;
 }
 header #menu-toggle {
   order: 2;
-  position: absolute; /* 절대 위치 지정 */
-  top: 10px; /* 원하는 위치 조정 */
-  right: 20px; /* 원하는 위치 조정 */
-  z-index: 999; /* 다른 요소보다 위에 표시될 수 있도록 큰 값 설정 */
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  z-index: 999;
+}
+header #menu-toggle img {
+  width: 25px;
 }
 header #app-title {
-  margin: 0; /* 기본 마진 제거 */
+  margin: 0;
 }
 header #mobile-nav {
-  display: none; /* 초기에는 숨김 */
-  position: absolute; /* 절대 위치 지정 */
-  top: 100%; /* 헤더 아래에 위치 */
+  display: none;
+  position: absolute;
+  top: 100%;
   left: 0;
   width: 100%;
-  background-color: #333;
-  z-index: 1; /* 메뉴 위에 위치하도록 설정 */
+  background-color: #1D1F76;
+  z-index: 1;
 }
 header #mobile-nav ul {
-  list-style: none; /* 목록 스타일 제거 */
-  padding: 0; /* 기본 패딩 제거 */
-  margin: 0; /* 기본 마진 제거 */
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: column; /* 메뉴 항목들을 세로로 나열 */
-  align-items: stretch; /* 가로로 꽉 채우기 */
+  flex-direction: column;
+  align-items: stretch;
 }
 header #mobile-nav ul li a {
-  color: #fff; /* 링크 글자색 */
-  text-decoration: none; /* 링크에 밑줄 제거 */
-  padding: 10px 20px; /* 링크의 내부 여백 설정 */
-  display: block; /* 링크를 블록 레벨 요소로 변경 */
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
 }
 @media screen and (max-width: 480px) {
   header #mobile-nav ul li a {
-    font-size: 18px; /* 화면이 작은 경우 링크 글자 크기 줄임 */
-  }
-  header #mobile-nav {
-    display: block; /* 작은 화면에서는 메뉴를 보이도록 설정 */
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   header #mobile-nav ul li a {
-    font-size: 20px; /* 작은 스마트폰 화면에서 링크 글자 크기 줄임 */
+    font-size: 20px;
   }
 }/*# sourceMappingURL=header.css.map */
