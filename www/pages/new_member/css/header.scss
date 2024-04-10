@@ -1,0 +1,69 @@
+header {
+    position: relative;
+    background-color: #1D1F76;
+    padding: 10px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+
+    #menu-toggle {
+        order: 2;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        z-index: 999;
+        img {
+            width: 25px;
+        }
+    }
+
+    #app-title {
+        margin: 0;
+    }
+
+    #mobile-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #1D1F76;
+        z-index: 1;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+
+            li {
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    // 미디어 쿼리 적용
+    @media screen and (max-width: 480px) {
+        #mobile-nav ul li a {
+            font-size: 18px;
+        }
+
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        #mobile-nav ul li a {
+            font-size: 20px;
+        }
+    }
+}

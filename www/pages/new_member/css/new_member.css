@@ -1,0 +1,52 @@
+#content {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  #content {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #content {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+#content #clubOrcrew {
+  width: 90%;
+  margin: 0 auto 20px;
+}
+#content #clubOrcrew h2 {
+  padding: 10px 0;
+  font-size: 24px;
+}
+#content #clubOrcrew #menu {
+  width: 100%;
+  font-size: 18px;
+}
+#content #typeNick {
+  width: 90%;
+  margin: 0 auto 30px;
+}
+#content #typeNick h2 {
+  padding: 10px 0;
+  font-size: 24px;
+}
+#content #typeNick #write {
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  border-bottom: 5px solid #1073BB;
+}
+#content #addNew {
+  display: block;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 22px;
+  color: #fff;
+  background-color: #007bff;
+  border: 3px solid #1D1F76;
+}/*# sourceMappingURL=new_member.css.map */

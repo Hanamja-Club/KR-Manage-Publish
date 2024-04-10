@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KartRider Rush+ Management</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/new_member.css">
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/new_member.js"></script>
 </head>
 <body>
-    
+    <header>
+        <h1 id="app-title">신규 팀원 추가</h1>
+        <button id="menu-toggle"><img src="img/menu-button.png" alt="this is menu button. click to see other menus."></button>
+        <nav id="mobile-nav">
+            <ul>
+                <li><a href="#">KartRider Rush+ Management</a></li>
+                <li><a href="#" id="member-management">> 회원 관리</a></li>
+                <li><a href="#" id="friendly-match">> 친선경기 횟수 조회</a></li>
+                <li><a href="#" id="add-new-member">> 신규 팀원 추가</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+        <div id="clubOrcrew">
+            <h2>클럽/크루 명</h2>
+            <select id="menu">
+                <option value="none">클럽/크루를 골라주세요.</option>
+                <option value="john-doe">John Doe</option>
+                <option value="jane-smith">Jane Smith</option>
+            </select>
+        </div>
+
+        <div id="typeNick">
+            <h2>닉네임</h2>
+            <input type="text" id="write" placeholder="닉네임을 입력해주세요.">
+        </div>
+
+        <button id="addNew">팀원 추가하기</button>
+    </section>
 </body>
 </html>
