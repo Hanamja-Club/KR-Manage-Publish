@@ -8,7 +8,7 @@ header {
   align-items: center;
   font-size: 24px;
 }
-header #menu-toggle {
+header #menuOpen {
   order: 2;
   background-color: transparent;
   border: none;
@@ -17,20 +17,20 @@ header #menu-toggle {
   right: 15px;
   z-index: 999;
 }
-header #menu-toggle img {
+header #menuOpen img {
   width: 25px;
 }
 header #app-title {
   margin: 0;
 }
 header #mobile-nav {
-  display: none;
   position: absolute;
-  top: 100%;
+  top: -400%;
   left: 0;
   width: 100%;
   background-color: #1D1F76;
   z-index: 1;
+  transition: top 1s;
 }
 header #mobile-nav ul {
   list-style: none;
@@ -45,6 +45,22 @@ header #mobile-nav ul li a {
   text-decoration: none;
   padding: 10px 20px;
   display: block;
+}
+header #mobile-nav ul li #menuClose {
+  order: 2;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 164px;
+  right: 15px;
+  z-index: 999;
+  width: 25px;
+}
+header #mobile-nav ul li:first-child a {
+  font-size: 24px;
+}
+header #mobile-nav.on {
+  top: 0;
 }
 @media screen and (max-width: 480px) {
   header #mobile-nav ul li a {

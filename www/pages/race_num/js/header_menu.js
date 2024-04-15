@@ -1,14 +1,15 @@
 //header_menu.js
 
-document.addEventListener("DOMContentLoaded",function() {
-    const menuToggle = document.getElementById("menu-toggle");
-    const navigation = document.getElementById("mobile-nav");
+document.addEventListener("DOMContentLoaded", function() {
+    const menuOpen = document.getElementById("menuOpen");
+    const menuClose = document.getElementById("menuClose");
+    const naviMove = document.getElementById("mobile-nav");
 
-    menuToggle.addEventListener("click", function(){
-        if (navigation.style.display === "none" || navigation.style.display === "") {
-            navigation.style.display = "block";
-        } else {
-            navigation.style.display = "none";
-        }
+    menuOpen.addEventListener('click', function() {
+        naviMove.classList.add('on');
+    });
+
+    menuClose.addEventListener('click', function() {
+        naviMove.classList.remove('on');
     });
 });

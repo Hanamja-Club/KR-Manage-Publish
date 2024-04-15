@@ -8,7 +8,7 @@ header {
     align-items: center;
     font-size: 24px;
 
-    #menu-toggle {
+    #menuOpen {
         order: 2;
         background-color: transparent;
         border: none;
@@ -21,18 +21,19 @@ header {
         }
     }
 
+
     #app-title {
         margin: 0;
     }
 
     #mobile-nav {
-        display: none;
         position: absolute;
-        top: 100%;
+        top: -400%;
         left: 0;
         width: 100%;
         background-color: #1D1F76;
         z-index: 1;
+        transition: top 1s;
         ul {
             list-style: none;
             padding: 0;
@@ -48,8 +49,26 @@ header {
                     padding: 10px 20px;
                     display: block;
                 }
+                #menuClose {
+                    order: 2;
+                    background-color: transparent;
+                    border: none;
+                    position: absolute;
+                    top: 164px;
+                    right: 15px;
+                    z-index: 999;
+                    width: 25px;
+                }
+            }
+            li:first-child {
+                a {
+                    font-size: 24px;
+                }
             }
         }
+    }
+    #mobile-nav.on {
+        top: 0;
     }
 
     // 미디어 쿼리 적용

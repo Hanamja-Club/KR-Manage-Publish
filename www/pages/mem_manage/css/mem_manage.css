@@ -39,4 +39,8 @@
   display: block;
   border-bottom: 2px solid #1073BB;
   margin-top: 5px;
+}
+#content #info div p {
+  height: 20px;
+  text-indent: 10px;
 }/*# sourceMappingURL=mem_manage.css.map */
