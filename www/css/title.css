@@ -1,7 +1,5 @@
-body {
-  background-color: #1D1F76;
-}
 body article {
+  background-color: #1D1F76;
   display: flex;
   flex-direction: column;
   align-items: center;
