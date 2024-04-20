@@ -1,0 +1,56 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Cart-Godic-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Nexon/Cart-Godic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cart-Godic-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Nexon/Cart-Godic-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cart-Godic-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Nexon/Cart-Godic-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/**************** RESET ****************/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Cart-Godic-Medium","Cart-Godic-Bold","Cart-Godic-ExtraBold", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+
+ul, ol, li {
+    list-style: none;
+}
+
+ul::after, ol::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+li {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%; /* 웹폰트 기본크기 : 16px = 100% */
+    font-weight: 400;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

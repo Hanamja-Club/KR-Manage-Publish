@@ -28,7 +28,7 @@ header {
 
     #mobile-nav {
         position: absolute;
-        top: -400%;
+        top: -450%;
         left: 0;
         width: 100%;
         background-color: #1D1F76;
@@ -54,7 +54,7 @@ header {
                     background-color: transparent;
                     border: none;
                     position: absolute;
-                    top: 164px;
+                    top: 215px;
                     right: 15px;
                     z-index: 999;
                     width: 25px;
@@ -76,6 +76,7 @@ header {
         #mobile-nav ul li a {
             font-size: 18px;
         }
+        
 
     }
 

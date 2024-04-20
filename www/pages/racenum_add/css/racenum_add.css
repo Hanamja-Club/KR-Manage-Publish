@@ -1,0 +1,95 @@
+#content {
+  text-align: center;
+  width: 100%;
+}
+#content table {
+  margin: 20px auto 20px;
+  width: 90%;
+  table-layout: fixed;
+}
+#content table thead {
+  width: 100%;
+}
+#content table thead tr {
+  width: 100%;
+}
+#content table thead tr th {
+  font-size: 18px;
+}
+#content table thead tr th:first-child {
+  width: 10%;
+}
+#content table thead tr th:nth-child(2) {
+  width: 75%;
+}
+#content table tbody {
+  width: 100%;
+}
+#content table tbody tr {
+  width: 100%;
+}
+#content table tbody tr td {
+  font-size: 20px;
+}
+#content table tbody tr td input {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20%;
+  left: 29%;
+}
+#content table tbody tr td:first-child {
+  width: 10%;
+  position: relative;
+}
+#content table tbody tr td:nth-child(2) {
+  width: 75%;
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  #content table {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #content table {
+    width: 80%;
+  }
+}
+#content #loadMore {
+  display: block;
+  margin: 20px auto 20px;
+  font-size: 24px;
+  border: 3px solid #1D1F76;
+  background-color: #007bff;
+  color: #fff;
+  width: 90%;
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  #content #loadMore {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #content #loadMore {
+    width: 80%;
+  }
+}
+#content #addMore {
+  display: block;
+  margin: 20px auto 20px;
+  font-size: 24px;
+  border: 3px solid #1D1F76;
+  background-color: #007bff;
+  color: #fff;
+  width: 90%;
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  #content #addMore {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #content #addMore {
+    width: 80%;
+  }
+}/*# sourceMappingURL=racenum_add.css.map */
