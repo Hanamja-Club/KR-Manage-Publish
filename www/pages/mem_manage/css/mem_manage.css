@@ -43,4 +43,18 @@
 #content #info div p {
   height: 20px;
   text-indent: 10px;
+}
+
+.buttons {
+  text-align: center;
+}
+.buttons button {
+  width: 45%;
+  font-size: 24px;
+  margin: 10px auto;
+}
+.buttons #editMem, .buttons #deleteMem {
+  border: 3px solid #1D1F76;
+  background-color: #007bff;
+  color: #fff;
 }/*# sourceMappingURL=mem_manage.css.map */

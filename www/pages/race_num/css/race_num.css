@@ -2,19 +2,19 @@
   text-align: center;
   width: 100%;
 }
-#content #selectors #organizationSelect, #content #selectors #periodSelect, #content #selectors button {
+#content #selectors #organizationSelect, #content #selectors #periodSelect, #content #selectors #searchTerm, #content #selectors button {
   display: block;
   margin: 20px auto 20px;
   font-size: 24px;
   width: 90%;
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
-  #content #selectors #organizationSelect, #content #selectors #periodSelect, #content #selectors button {
+  #content #selectors #organizationSelect, #content #selectors #periodSelect, #content #selectors #searchTerm, #content #selectors button {
     width: 95%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  #content #selectors #organizationSelect, #content #selectors #periodSelect, #content #selectors button {
+  #content #selectors #organizationSelect, #content #selectors #periodSelect, #content #selectors #searchTerm, #content #selectors button {
     width: 80%;
   }
 }
